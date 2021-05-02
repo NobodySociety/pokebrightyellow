@@ -1,4 +1,4 @@
-roms := pokeyellow.gbc pokeyellow_debug.gbc
+roms := pokebrightyellow.gbc pokeyellow_debug.gbc
 
 rom_obj := \
 audio.o \
@@ -12,7 +12,7 @@ gfx/pikachu.o \
 gfx/sprites.o \
 gfx/tilesets.o
 
-pokeyellow_obj       := $(rom_obj)
+pokebrightyellow_obj       := $(rom_obj)
 pokeyellow_debug_obj := $(rom_obj:.o=_debug.o)
 
 
@@ -40,7 +40,7 @@ RGBLINK ?= $(RGBDS)rgblink
 .PHONY: all yellow yellow_debug clean tidy compare tools
 
 all: $(roms)
-yellow:       pokeyellow.gbc
+yellow:       pokebrightyellow.gbc
 yellow_debug: pokeyellow_debug.gbc
 
 clean: tidy
@@ -48,7 +48,7 @@ clean: tidy
 	find audio/pikachu_cries \( -iname '*.pcm' \) -delete
 
 tidy:
-	rm -f $(roms) $(pokeyellow_obj) $(pokeyellow_debug_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym) rgbdscheck.o
+	rm -f $(roms) $(pokebrightyellow_obj) $(pokeyellow_debug_obj) $(roms:.gbc=.map) $(roms:.gbc=.sym) rgbdscheck.o
 	$(MAKE) clean -C tools/
 
 compare: $(roms)
@@ -84,7 +84,7 @@ ifeq (,$(filter clean tidy tools,$(MAKECMDGOALS)))
 $(info $(shell $(MAKE) -C tools))
 
 # Dependencies for objects
-$(foreach obj, $(pokeyellow_obj), $(eval $(call DEP,$(obj),$(obj:.o=.asm))))
+$(foreach obj, $(pokebrightyellow_obj), $(eval $(call DEP,$(obj),$(obj:.o=.asm))))
 $(foreach obj, $(pokeyellow_debug_obj), $(eval $(call DEP,$(obj),$(obj:_debug.o=.asm))))
 
 endif
@@ -93,10 +93,10 @@ endif
 %.asm: ;
 
 
-pokeyellow_pad       = 0x00
+pokebrightyellow_pad       = 0x00
 pokeyellow_debug_pad = 0xff
 
-opts = -cjsv -k 01 -l 0x33 -m 0x1b -p 0 -r 03 -t "POKEMON YELLOW"
+opts = -cjsv -k 01 -l 0x33 -m 0x1b -p 0 -r 03 -t "POKEBRITEYELLOW"
 
 %.gbc: $$(%_obj) layout.link
 	$(RGBLINK) -p $($*_pad) -m $*.map -n $*.sym -l layout.link -o $@ $(filter %.o,$^)
