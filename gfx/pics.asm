@@ -50,12 +50,12 @@ ArbokPicFront::       INCBIN "gfx/pokemon/front/arbok.pic"
 ArbokPicBack::        INCBIN "gfx/pokemon/back/arbokb.pic"
 PikachuPicFront::     INCBIN "gfx/pokemon/front/pikachu.pic"
 PikachuPicBack::      INCBIN "gfx/pokemon/back/pikachub.pic"
-RaichuPicFront::      INCBIN "gfx/pokemon/front/raichu.pic"
-RaichuPicBack::       INCBIN "gfx/pokemon/back/raichub.pic"
 
 
 SECTION "Pics 2", ROMX
 
+RaichuPicFront::      INCBIN "gfx/pokemon/front/raichu.pic"
+RaichuPicBack::       INCBIN "gfx/pokemon/back/raichub.pic"
 SandshrewPicFront::   INCBIN "gfx/pokemon/front/sandshrew.pic"
 SandshrewPicBack::    INCBIN "gfx/pokemon/back/sandshrewb.pic"
 SandslashPicFront::   INCBIN "gfx/pokemon/front/sandslash.pic"
@@ -104,12 +104,12 @@ VenomothPicFront::    INCBIN "gfx/pokemon/front/venomoth.pic"
 VenomothPicBack::     INCBIN "gfx/pokemon/back/venomothb.pic"
 DiglettPicFront::     INCBIN "gfx/pokemon/front/diglett.pic"
 DiglettPicBack::      INCBIN "gfx/pokemon/back/diglettb.pic"
-DugtrioPicFront::     INCBIN "gfx/pokemon/front/dugtrio.pic"
-DugtrioPicBack::      INCBIN "gfx/pokemon/back/dugtriob.pic"
 
 
 SECTION "Pics 3", ROMX
 
+DugtrioPicFront::     INCBIN "gfx/pokemon/front/dugtrio.pic"
+DugtrioPicBack::      INCBIN "gfx/pokemon/back/dugtriob.pic"
 MeowthPicFront::      INCBIN "gfx/pokemon/front/meowth.pic"
 MeowthPicBack::       INCBIN "gfx/pokemon/back/meowthb.pic"
 PersianPicFront::     INCBIN "gfx/pokemon/front/persian.pic"

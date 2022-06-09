@@ -672,12 +672,12 @@ OmastarPicFront::     INCBIN "gfx/pokemon/front/omastar.pic"
 OmastarPicBack::      INCBIN "gfx/pokemon/back/omastarb.pic"
 KabutoPicFront::      INCBIN "gfx/pokemon/front/kabuto.pic"
 KabutoPicBack::       INCBIN "gfx/pokemon/back/kabutob.pic"
-KabutopsPicFront::    INCBIN "gfx/pokemon/front/kabutops.pic"
-KabutopsPicBack::     INCBIN "gfx/pokemon/back/kabutopsb.pic"
 
 
 SECTION "bank41", ROMX, BANK[$41]
 
+KabutopsPicFront::    INCBIN "gfx/pokemon/front/kabutops.pic"
+KabutopsPicBack::     INCBIN "gfx/pokemon/back/kabutopsb.pic"
 AerodactylPicFront::  INCBIN "gfx/pokemon/front/aerodactyl.pic"
 AerodactylPicBack::   INCBIN "gfx/pokemon/back/aerodactylb.pic"
 SnorlaxPicFront::     INCBIN "gfx/pokemon/front/snorlax.pic"
